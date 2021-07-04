@@ -1,0 +1,32 @@
+<!--pages/music/music.wxml-->
+<view class="h1">
+  <image src="/images/cd.png"></image>
+  {{title}}
+	<image src="/images/cd.png"></image>
+</view>
+<view class="h1-2">-----------------------------------------</view>
+<view class='newsong_row' wx:for="{{newSong}}" wx:key="index">
+  <view class='song' bindtap="playThis" data-hash="{{ item.hash }}">{{index+1}}. {{item.filename}}</view>
+  <text>{{item.duration}}</text>
+</view>
+
+
+<!-- <view class="playshow" wx:if="{{isPlay}}">
+  <audio poster="{{musicImg}}" name="{{musicInfo.songName}}" author="{{musicInfo.singerName}}" src="{{musicInfo.url}}" action="{{action}}"></audio>
+</view> -->
+
+<!-- 底部播放条 -->
+<view class="player" wx:if="{{isPlay}}">
+  <!-- 专辑封面 -->
+  <image class="player-cover" src="{{musicImg}}"></image>
+  <!-- 歌曲信息 -->
+  <view class="player-info">
+    <view class="player-info-songName">{{musicInfo.songName}}</view>
+    <view class="player-info-singer">{{musicInfo.singerName}}</view>
+  </view>
+  <!-- 播放控制 -->
+  <view class="player-control">
+    <image wx:if="{{isPlay=='0'}}" src='/images/02.png' bindtap="playMusic"></image>
+    <image wx:else src='/images/02stop.png' bindtap="pauseMusic"></image>
+  </view>
+</view>

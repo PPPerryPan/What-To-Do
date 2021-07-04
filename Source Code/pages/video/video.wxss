@@ -1,0 +1,40 @@
+/* pages/video/video.wxss */
+
+.topTab{
+	display: flex;
+	/* background-color: black; */
+}
+.recommend{
+	flex: 1;
+	line-height: 50px;
+	font-size: 15pt;
+	margin-left: 10rpx;
+	text-align: center;
+}
+.topTab > image{
+	width: 100rpx;
+	height: 100rpx;
+}
+.videoList-content{
+	display: flex;
+	flex-direction: column;
+	margin:	20rpx;
+}
+/* .videoList-title{ */
+	/* margin-top: -40rpx; */
+	/* display: inline; */
+/* } */
+.videoList-playtimes{
+	/* display: inline; */
+	position: absolute;
+	right: 20rpx;
+	font-size: 10pt;
+	color: rgb(151, 143, 143)
+}
+.user{
+	width: 70rpx;
+	height: 70rpx;
+	margin-top: 10rpx;
+	margin-right: 10rpx;
+
+}

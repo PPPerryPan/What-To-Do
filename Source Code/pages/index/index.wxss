@@ -1,0 +1,50 @@
+/* pages/index/index.wxss */
+page{
+	margin-top: 10rpx;
+	margin-bottom: 10rpx;
+}
+.img{
+	margin: 30rpx;
+}
+.user{
+	display: flex;
+  align-items: center;
+	margin: 0 auto;
+	width: 200rpx;
+  height: 200rpx;
+  border-radius: 50%;
+}
+.h1 {
+  font-size: 20pt;
+}
+
+.h2 {
+  font-size: 12pt;
+}
+
+.center {
+  text-align: center;
+  line-height: 30pt;
+}
+
+.newThing {
+  color: red;
+  font-weight: bold;
+}
+
+.button {
+  font-size: 12pt;
+  background-color: greenyellow;
+}
+
+.weather {
+  width: 100%;
+  text-align: center;
+  line-height: 55rpx;
+  /* color: rgba(211, 136, 66, 0.356); */
+  font-weight: bold;
+  position: fixed;
+  height: 330rpx;
+  bottom: 0px;
+	z-index: -1
+}

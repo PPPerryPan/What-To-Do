@@ -1,0 +1,26 @@
+<!--pages/index/index.wxml-->
+<view class="img">
+  <button wx:if="{{!hasUserInfo}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">获取头像昵称</button>
+  <block wx:else>
+    <image class="user" src="{{userInfo.avatarUrl}}" bindtap="gotoPerson"></image>
+  </block>
+</view>
+<view class="h1,center">{{thing}}</view>
+<view class='h2,center,newThing'>{{newThing}}</view>
+<button wx:if="{{state=='running'}}" bindtap="startTodo" style="width:80%;margin-bottom:30rpx;" type="primary">就这个了！</button>
+<button wx:else class="suiji" bindtap='bindClickTap' style="width:80%" type="primary">开始随机抽选</button>
+
+<!-- <view class="newThing,center">{{newThing}}</view> -->
+<view class="center" wx:if="{{i>0}}">你已经抽取了{{i}}次！</view>
+<view class="center" wx:if="{{i>1}}">你已经反悔了{{i-1}}次！</view>
+<button wx:if="{{select>0}}" type="primary" style="width:80%;">
+  <navigator url="{{url}}">点我{{newThing}}</navigator>
+</button>
+
+<view class="weather">
+  <view class="today">--------------今日--------------</view>
+  <text class="today">{{today}}</text>
+  <text>{{weatherData}}</text>
+  <text>{{hi}}</text>
+</view>
+<!-- <view wx:if="{{i>0}}">{{link}}</view> -->

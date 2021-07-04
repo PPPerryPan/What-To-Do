@@ -1,0 +1,14 @@
+<!--pages/eat/eat.wxml-->
+<!-- <text>pages/eat/eat.wxml</text> -->
+
+<view>
+	<view class="h1">{{title}}</view>
+  <view wx:for="{{rests}}" wx:for-item="rest" wx:key="index">
+    <view id="{{index}}" data-index="{{index}}" class="locationTap" bindtap="viewLocation">
+      <view class="locationContent">
+        <view class="title">{{index + 1}}. {{rest.title}}</view>
+        <view class="address">{{rest.address}}</view>
+      </view>
+    </view>
+  </view>
+</view>

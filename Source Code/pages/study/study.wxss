@@ -1,0 +1,26 @@
+/* pages/study/study.wxss */
+/* The last modify:2020.05.03 18:39(beta Ver.) */
+page{
+	text-align: center;
+}
+.h1{
+	font-size: 30pt;
+	font-weight: bold;
+	text-align: center;
+	position: relative;
+	top: 400rpx;
+}
+.h3{
+	font-size: 16pt;
+	font-weight: bold;
+	text-align: center;
+	color: red;
+}
+text{
+	display: block;
+	margin-bottom: 15rpx;
+}
+.startStudy{
+	position: relative;
+	top: 700rpx;
+}

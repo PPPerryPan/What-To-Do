@@ -1,0 +1,19 @@
+<!--pages/video/video.wxml-->
+<!-- <text>pages/video/video.wxml</text> -->
+<view class="topTab">
+  <image src="/images/ytLogo.png"></image>
+  <text class="recommend">视频推荐</text>
+  <open-data class="user" type="userAvatarUrl"></open-data>
+</view>
+<view>
+
+  <view wx:for="{{videoList}}" wx:key="index">
+    <txv-video class="video" vid="{{item.vid}}" playerid="txv1"></txv-video>
+    <view class="videoList-content">
+      <view class="videoList-title">{{item.title}}
+				<text class="videoList-playtimes">---{{item.times}}</text>
+			</view>  
+    </view>
+  </view>
+
+</view>

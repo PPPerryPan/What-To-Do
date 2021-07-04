@@ -1,0 +1,9 @@
+{
+	"usingComponents": {
+		"txv-video": "plugin://tencentvideo/video"
+	},
+	"backgroundTextStyle": "light",
+	"navigationBarBackgroundColor": "#fff",
+	"navigationBarTitleText": "Video",
+	"navigationBarTextStyle": "black"
+}

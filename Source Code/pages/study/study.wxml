@@ -1,0 +1,12 @@
+<!--pages/study/study.wxml-->
+<!-- The last modify:2020.05.03 18:39(beta Ver.) -->
+<text class="h1" wx:if="{{num>0}}">你已专心:</text>
+  <text class="h1" wx:if="{{min>0}}">{{min}}分</text>
+  <text class="h1" wx:if="{{num>0}}">{{num}}秒</text>
+
+<view class="startStudy">
+  <view class="h3" wx:if="{{num==0}}">拿出书本，反扣手机，开始学习！</view>
+  <view class="h3" wx:if="{{state=='pause'}}">还学不学习？读不读书了？</view>
+  <text class="h3" wx:if="{{state=='pause'}}">点击按钮并反扣手机重新开始计时！</text>
+  <button wx:if="{{state=='pause'||num==null}}" type="primary" bindtap="startAccelerometer">开始学习！</button>
+</view>

@@ -1,0 +1,83 @@
+/* pages/music/music.wxss */
+.h1{
+	display: flex;
+	justify-content: center;
+	width: 750rpx;
+	height: 70rpx;
+	font-size: 50rpx;
+	margin-top: 20rpx;
+}
+.h1-2{
+	margin-top: 5rpx;
+	text-align: center
+}
+.h1 > image{
+	width: 70rpx;
+	height: 70rpx;
+	margin-right: 10rpx;
+	margin-left: 10rpx;
+	
+}
+.newsong_row{
+  padding: 3%;
+  height:40rpx;
+  line-height: 40rpx;
+  display: flex;
+  justify-content: space-between;
+	margin: auto 20rpx;
+	border-bottom: 2rpx solid #ccc;
+}
+.song{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/* 底部播放状态 */
+/* .playshow {
+  position: fixed;
+  left: 0;
+  bottom: 200rpx;
+  width: 100%;
+  height: 4rem;
+  text-align: center;
+} */
+
+
+/* 3.底部 */
+
+.player {
+	width: 600rpx;
+  height: 112rpx;
+	position: fixed;
+	left: 75rpx;
+	bottom: 0rpx;
+  background-color: #343636;
+  border: 1rpx solid #252525;
+  display: flex;
+  align-items: center;
+}
+
+.player image {
+  width: 80rpx;
+  height: 80rpx;
+  margin-right: 15rpx;
+}
+
+.player-cover {
+  margin-left: 15rpx;
+  /* border-radius: 50rpx; */
+  border: 1px solid #333;
+}
+
+.player-info {
+  margin-left: 20rpx;
+  padding-bottom: 5rpx;
+  flex: 1;
+}
+.player-info-songName{
+	color: rgb(255, 255, 255);
+}
+.player-info-singer {
+  color: #888;
+}
